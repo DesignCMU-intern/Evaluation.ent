@@ -180,6 +180,12 @@
   .res-table tr.total td:first-child { font-family:"Trirong",serif; font-weight:600; }
   .res-table tr.total td:last-child { font-size:17px; }
   .res-actions { margin-top:22px; display:flex; gap:10px; flex-wrap:wrap; }
+  .done-note { margin-top:24px; padding:18px 20px; border:1px solid var(--line); border-radius:12px;
+    background:linear-gradient(180deg,#F1EADD,#EEE5D6); display:flex; gap:14px; align-items:flex-start; }
+  .done-note .ic { flex:none; width:34px; height:34px; border-radius:50%; background:#5C7A52; color:#fff;
+    display:grid; place-items:center; font-size:18px; font-weight:700; line-height:1; }
+  .done-note .txt strong { display:block; font-family:"Trirong",serif; font-size:17px; margin-bottom:4px; color:var(--ink); }
+  .done-note .txt p { margin:0; color:var(--ink-soft); font-size:13.5px; line-height:1.6; }
 
   footer.foot { text-align:center; color:var(--muted); font-size:12px; margin-top:28px; line-height:1.7; }
 
@@ -307,6 +313,14 @@
       <button type="button" class="btn btn-ghost" id="copyBtn">คัดลอกสรุปเป็นข้อความ</button>
       <button type="button" class="btn btn-ghost" id="editBtn">แก้ไขคำตอบ</button>
     </div>
+
+    <div class="done-note">
+      <div class="ic">✓</div>
+      <div class="txt">
+        <strong>เสร็จสิ้นกระบวนการประเมิน</strong>
+        <p>การประเมินของท่านเสร็จสมบูรณ์แล้ว ไม่ต้องดำเนินการใด ๆ เพิ่มเติม หากต้องการเก็บสำเนาไว้เป็นหลักฐาน สามารถดาวน์โหลดหรือพิมพ์เป็น PDF จากปุ่มด้านบนได้ จากนั้น<strong style="font-weight:600">ปิดหน้านี้ได้เลย</strong> — ขอบคุณที่สละเวลาประเมินและร่วมพัฒนานักศึกษาครับ</p>
+      </div>
+    </div>
   </section>
 
   <footer class="foot">
@@ -347,7 +361,7 @@
      วางลิงก์ Web app ของ Google Apps Script ตรงนี้ (ลงท้ายด้วย /exec)
      ดูวิธีสร้างได้จากไฟล์ apps-script.gs ที่แนบมา
   =================================================================== */
-  const SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbyjv1RVmCJllGb3K8YFIsJnkOlnmno9AbxnpxzLnN74BGcv_1EhNM9U6mGA6J3lRPOw/exec";
+  const SHEET_ENDPOINT = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
 
   function sendToSheet(data) {
     const el = document.getElementById("sendStatus");
