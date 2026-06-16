@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Trirong:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
 
 <style>
   :root {
@@ -47,7 +48,7 @@
   .eyebrow { font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--clay-deep);
     font-weight:600; margin:0 0 12px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
   .eyebrow .dot { width:5px; height:5px; border-radius:50%; background:var(--clay); display:inline-block; }
-  h1 { font-family:"Trirong",serif; font-weight:600; font-size:clamp(27px,5.4vw,40px);
+  h1 { font-family:"Google Sans", sans-serif; font-weight:600; font-size:clamp(27px,5.4vw,40px);
     line-height:1.14; margin:0 0 8px; letter-spacing:-.005em; }
   .sub-en { font-size:12.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted);
     font-weight:500; margin:0 0 16px; }
@@ -66,8 +67,8 @@
   section.card { margin-top:18px; padding:26px 30px 28px; background:var(--surface);
     border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); }
   .sec-head { display:flex; align-items:baseline; gap:12px; margin:0 0 4px; }
-  .sec-tag { font-family:"Trirong",serif; font-weight:600; font-size:15px; color:var(--clay); letter-spacing:.04em; flex:none; }
-  .sec-title { font-family:"Trirong",serif; font-weight:600; font-size:21px; margin:0; line-height:1.25; }
+  .sec-tag { font-family:"Google Sans", sans-serif; font-weight:600; font-size:15px; color:var(--clay); letter-spacing:.04em; flex:none; }
+  .sec-title { font-family:"Google Sans", sans-serif; font-weight:600; font-size:21px; margin:0; line-height:1.25; }
   .sec-note { color:var(--muted); font-size:13.5px; margin:2px 0 18px; }
 
   /* info grid */
@@ -99,13 +100,13 @@
   .legend { display:flex; gap:8px; flex-wrap:wrap; margin:0 0 22px; }
   .legend .chip { font-size:12.5px; color:var(--ink-soft); background:var(--surface-2);
     border:1px solid var(--line-soft); border-radius:99px; padding:5px 12px; }
-  .legend .chip b { font-family:"Trirong",serif; color:var(--clay-deep); margin-right:5px; }
+  .legend .chip b { font-family:"Google Sans", sans-serif; color:var(--clay-deep); margin-right:5px; }
 
   /* category blocks */
   .cat { border-top:1px solid var(--line); padding:20px 0 6px; }
   .cat:first-of-type { border-top:none; padding-top:0; }
   .cat-head { display:flex; gap:13px; align-items:center; margin-bottom:8px; }
-  .cat-no { font-family:"Trirong",serif; font-weight:600; font-size:17px; color:var(--clay-deep);
+  .cat-no { font-family:"Google Sans", sans-serif; font-weight:600; font-size:17px; color:var(--clay-deep);
     flex:none; width:30px; height:30px; display:grid; place-items:center;
     border:1px solid var(--line); border-radius:8px; background:var(--surface-2); }
   .cat-name { font-weight:600; font-size:16.5px; margin:0; line-height:1.3; }
@@ -114,12 +115,12 @@
     flex-wrap:wrap; padding:11px 0 11px 43px; border-top:1px dashed var(--line-soft); }
   .subrow:first-of-type { border-top:none; }
   .sub-text { flex:1 1 250px; font-size:14.5px; color:var(--ink-soft); }
-  .sub-text .lvl { font-family:"Trirong",serif; color:var(--muted); font-size:12.5px; font-weight:600; margin-right:7px; }
+  .sub-text .lvl { font-family:"Google Sans", sans-serif; color:var(--muted); font-size:12.5px; font-weight:600; margin-right:7px; }
   .dots { display:flex; gap:7px; flex:none; }
   .dotopt { position:relative; }
   .dotopt input { position:absolute; opacity:0; inset:0; cursor:pointer; margin:0; }
   .dotopt span { display:grid; place-items:center; width:38px; height:38px; border:1px solid var(--line);
-    border-radius:50%; background:var(--surface-2); font-family:"Trirong",serif; font-weight:600;
+    border-radius:50%; background:var(--surface-2); font-family:"Google Sans", sans-serif; font-weight:600;
     font-size:15px; color:var(--ink-soft); cursor:pointer; transition:all .15s; }
   .dotopt input:hover + span { border-color:var(--clay); transform:translateY(-1px); }
   .dotopt input:focus-visible + span { box-shadow:0 0 0 3px rgba(168,90,56,.2); }
@@ -160,10 +161,10 @@
     text-align:center; background:conic-gradient(var(--clay) var(--deg,0deg), var(--paper-2) 0); position:relative; }
   .res-score::after { content:""; position:absolute; inset:9px; border-radius:50%; background:var(--surface); }
   .res-score .inner { position:relative; z-index:1; }
-  .res-score .big { font-family:"Trirong",serif; font-weight:700; font-size:30px; line-height:1; color:var(--clay-deep); }
+  .res-score .big { font-family:"Google Sans", sans-serif; font-weight:700; font-size:30px; line-height:1; color:var(--clay-deep); }
   .res-score .of { font-size:12px; color:var(--muted); }
   .res-words { flex:1 1 240px; }
-  .res-words .grade { font-family:"Trirong",serif; font-weight:600; font-size:22px; margin:0 0 4px; }
+  .res-words .grade { font-family:"Google Sans", sans-serif; font-weight:600; font-size:22px; margin:0 0 4px; }
   .res-words p { margin:0; color:var(--ink-soft); font-size:14px; }
   .send-status { font-size:13px; margin:-4px 0 4px; font-weight:500; }
   .send-status.pending { color:var(--muted); }
@@ -171,20 +172,20 @@
   .send-status.warn { color:var(--clay-deep); }
   .res-table { width:100%; border-collapse:collapse; margin-top:22px; font-size:14px; }
   .res-table td { padding:8px 6px; border-bottom:1px solid var(--line-soft); vertical-align:top; }
-  .res-table td:last-child { text-align:right; font-weight:600; font-family:"Trirong",serif; color:var(--clay-deep); white-space:nowrap; }
+  .res-table td:last-child { text-align:right; font-weight:600; font-family:"Google Sans", sans-serif; color:var(--clay-deep); white-space:nowrap; }
   .res-table tr.grp td { background:var(--surface-2); font-weight:600; border-bottom:1px solid var(--line); }
-  .res-table tr.grp td:first-child { font-family:"Trirong",serif; }
+  .res-table tr.grp td:first-child { font-family:"Google Sans", sans-serif; }
   .res-table tr.sub td:first-child { padding-left:22px; color:var(--ink-soft); font-size:13.5px; }
   .res-table tr.sub td:last-child { font-family:inherit; font-weight:500; color:var(--ink-soft); }
   .res-table tr.total td { border-bottom:none; padding-top:12px; font-size:15px; }
-  .res-table tr.total td:first-child { font-family:"Trirong",serif; font-weight:600; }
+  .res-table tr.total td:first-child { font-family:"Google Sans", sans-serif; font-weight:600; }
   .res-table tr.total td:last-child { font-size:17px; }
   .res-actions { margin-top:22px; display:flex; gap:10px; flex-wrap:wrap; }
   .done-note { margin-top:24px; padding:18px 20px; border:1px solid var(--line); border-radius:12px;
     background:linear-gradient(180deg,#F1EADD,#EEE5D6); display:flex; gap:14px; align-items:flex-start; }
   .done-note .ic { flex:none; width:34px; height:34px; border-radius:50%; background:#5C7A52; color:#fff;
     display:grid; place-items:center; font-size:18px; font-weight:700; line-height:1; }
-  .done-note .txt strong { display:block; font-family:"Trirong",serif; font-size:17px; margin-bottom:4px; color:var(--ink); }
+  .done-note .txt strong { display:block; font-family:"Google Sans", sans-serif; font-size:17px; margin-bottom:4px; color:var(--ink); }
   .done-note .txt p { margin:0; color:var(--ink-soft); font-size:13.5px; line-height:1.6; }
 
   footer.foot { text-align:center; color:var(--muted); font-size:12px; margin-top:28px; line-height:1.7; }
